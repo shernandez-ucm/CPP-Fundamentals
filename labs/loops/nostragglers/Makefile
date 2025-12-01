@@ -12,7 +12,7 @@ build:
 	$(CXX) $(CXXFLAGS) $(SRC)
 	$(CXX) -o $(PROGRAM) *.o
 
-run:
+run: build
 	./$(PROGRAM)
 	
 # make clean rule

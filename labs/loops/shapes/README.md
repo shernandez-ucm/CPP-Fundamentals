@@ -2,21 +2,21 @@
 
 Possible Points: 100
 
-Write a C++ program to implement a menu-driven program that performs various operations such as finding max, min, sum, average, etc. on two numbers based on user choice. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
+Write a C++ program to display various geometric shapes such as triangle, flipped triangle, and square based on user input height. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
 
 ## Type and fix the code
 
 1. Create the directory structure similar to this lab as shown below:
 
 ```bash
-menu/
+shapes/
 ├── data/
 ├── src/
-│   ├── utils.h
-│   └── utils.cpp
+│   ├── shapes.h
+│   └── shapes.cpp
 │   └── main.cpp
 ├── tests/
-│   └── test_utils.cpp
+│   └── test_shapes.cpp
 ├── Makefile
 └── README.md
 └── screenshots/

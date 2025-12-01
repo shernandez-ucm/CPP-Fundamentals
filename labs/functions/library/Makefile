@@ -16,23 +16,29 @@ CPPFILES = src/main.cpp src/my_math.cpp
 # make build rule/default rule that'll be run when we run "make"
 # first compile each file to object file
 # then make a single binary program
-all:
+
+all: build doctest clean
+
+build:
 	$(CXX) $(CXXFLAGS) $(CPPFILES)
 	$(CXX) -o $(PROGRAM) *.o
 
-run:
+run: build
 	./$(PROGRAM)
 
-unittest:
+doctest:
 	$(CXX) tests/test_my_math.cpp src/my_math.cpp -o test_my_math.exe
 	./test_my_math.exe
 	@echo "All tests executed successfully!"
 	
 # make clean rule
 # delete object and binary files
+
 clean:
-	find . -type f -name "*.out" -delete
-	find . -type f -name "*.o" -delete
-	find . -type f -name ".exe" -delete
+	find . -name "*.o" -delete
+	find . -name "*.dSYM" -type d -exec rm -rf {} + 2>/dev/null || true
+	find . -name "*.exe" -delete
+	find . -name "*.out" -delete
+	find . -name "*.pch" -delete
 	
 	

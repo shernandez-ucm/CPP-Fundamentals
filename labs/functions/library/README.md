@@ -2,21 +2,21 @@
 
 Possible Points: 100
 
-Write a C++ program to implement a menu-driven program that performs various operations such as finding max, min, sum, average, etc. on two numbers based on user choice. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
+Write a C++ program to implement various math functions using the C++ standard library. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
 
 ## Type and fix the code
 
 1. Create the directory structure similar to this lab as shown below:
 
 ```bash
-menu/
+library/
 ├── data/
 ├── src/
-│   ├── utils.h
-│   └── utils.cpp
+│   ├── my_math.h
+│   └── my_math.cpp
 │   └── main.cpp
 ├── tests/
-│   └── test_utils.cpp
+│   └── test_my_math.cpp
 ├── Makefile
 └── README.md
 └── screenshots/

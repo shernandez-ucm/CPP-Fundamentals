@@ -1,8 +1,8 @@
-# CS1 Lab - Fruitful Functions and Unittest
+# CS1 Lab - Loops and Unittest
 
 Possible Points: 100
 
-Write a C++ program to solve the Kattis problemid thelastproblem: [https://open.kattis.com/problems/thelastproblem](https://open.kattis.com/problems/thelastproblem). Note that the last part of the URL, e.g. `thelastproblem` is the problem id. Read the problem statement carefully to design a correct solution.
+Write a C++ program to solve the Kattis problemid doggopher: [https://open.kattis.com/problems/doggopher](https://open.kattis.com/problems/doggopher). Note that the last part of the URL, e.g. `doggopher` is the problem id. Read the problem statement carefully to design a correct solution.
 
 ## Kattis Setup
 
@@ -30,17 +30,23 @@ kattis test
 1. Create the directory structure similar to this lab as shown below:
 
 ```bash
-thelastproblem/
+doggopher/
 ├── data/
 ├── src/
-│   ├── thelastproblem.h
-│   └── thelastproblem.cpp
+│   ├── doggopher.h
+│   └── doggopher.cpp
 │   └── main.cpp
 ├── tests/
-│   └── test_thelastproblem.cpp
+│   └── test_doggopher.cpp
 ├── Makefile
 └── README.md
 └── screenshots/
+```
+
+- kattis template command may create some of these files and folders for you.
+
+```bash
+kattis template -l cpp -p <problemid> -s
 ```
 
 2. Type the contents provided in `.h` and `.cpp` files and fix all fixmes. Write #fixed# after each #fixme.
