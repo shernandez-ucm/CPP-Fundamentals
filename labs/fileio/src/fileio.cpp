@@ -1,61 +1,16 @@
-/*
-    CS1 - File IO Lab
-
-    Updated by: FIXME
-    Date: FIXME
-
-    The program reads numbers from a file and finds statistical values from those numbers.
-    Lab demonstrates the file io and vector application.
-    Statistical value's definitions for mean, median, mode, etc. can be found here: https://www.purplemath.com/modules/meanmode.htm
-*/
-
 #include <iostream>
-#include <iomanip>
 #include <fstream>
-#include <string>
-#include <cassert>
+#include <sstream>
 #include <vector>
-#include <algorithm>
+#include <string>
+#include <iomanip>
 #include <cmath>
+#include <cassert>
+#include "fileio.h"
 
-using namespace std;
-
-const float EPSILON = 1e-4; // accuracy upto 4 decimal points
-
-// function prototypes
-void read_data(vector<int> &, const string);
-int find_max(const vector<int> &);
-int findMin(const vector<int> &);
-float findMean(const vector<int> &); // average
-int findRange(const vector<int> &);
-float findMedian(vector<int>);
-// bonus implement findMode function
-int findMode(const vector<int> &);
-
-void write_data(const vector<int> &numbers);
-void test();
-
-int main(int argc, char *argv[])
+void read_data(vector<int> &numbers, const string input_file)
 {
-    if (argc == 2 && string(argv[1]) == "test")
-    {
-        test();
-        return 0;
-    }
-    vector<int> numbers;
-    string inFile;
-    cout << "Enter input file name: ";
-    getline(cin, inFile);
-    read_data(numbers, inFile);
-    writeData(numbers);
-    cout << "All done. Enter to exit...";
-    cin.get();
-    return 0;
-}
-
-void read_data(vector<int> &numbers, const string inputFileName)
-{
-    // FIXME1: Open inputFileName for reading data
+    // FIXME1: Open input_file for reading data
     // read the data until eof marker and store each num into numbers vector
     int num;
 }
@@ -114,20 +69,4 @@ float find_median(vector<int> nums)
         median = nums[nums.size() / 2];
     }
     return median;
-}
-
-void test()
-{
-    vector<int> numbers = {100, 10, 5, 0, -99, 10, 99};
-    // cout << find_mean(numbers) << " " << find_mean(numbers)-17.857142 << endl;
-    assert(fabs(find_mean(numbers) - 17.857142) <= EPSILON);
-    assert(find_max(numbers) == 100);
-    assert(find_median(numbers) == 10);
-    vector<int> numbers1 = {10, 10, 10, 0, -10, -10};
-    assert(fabs(find_mean(numbers1) - 1.6667) <= EPSILON);
-    assert(find_max(numbers1) == 10);
-    assert(find_median(numbers1) == 5);
-    // FIXME7: Write at least two test cases for other functions
-
-    cerr << "all test cases passed!\n";
 }
