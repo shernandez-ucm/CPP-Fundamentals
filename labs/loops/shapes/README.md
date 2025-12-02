@@ -1,4 +1,4 @@
-# CS1 Lab - Conditionals and Unittest
+# CS1 Lab - Loops and Unittest
 
 Possible Points: 100
 
