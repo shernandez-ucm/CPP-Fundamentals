@@ -1,8 +1,9 @@
-# CS1 Lab - Conditionals and Unittest
+# CS1 Lab - Functions and Basic Unittest Lab - 1
 
 Possible Points: 100
 
-Write a C++ program to implement various math functions using the C++ standard library. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
+Write a C++ program that implements functions to wrap various math functions provided by the C++ standard library.
+Goal of the lab is to learn to modularize your code using user-defined functions and write unit tests to automatically test your code.
 
 ## Type and fix the code
 
@@ -22,32 +23,27 @@ library/
 └── screenshots/
 ```
 
-- kattis template command may create some of these files and folders for you.
-
-```bash
-kattis template -l cpp -p <problemid> -s
-```
-
 2. Type the contents provided in `.h` and `.cpp` files and fix all fixmes. Write #fixed# after each #fixme.
 3. Follow best programming practices by using proper white spaces, comments, etc.
 
 ## Manual Whole program test
 
-1. Test the whole program manually. Follow the menu options to read data, find max & min, calculate sum & average, and delete data.
-2. Create screenshots of your tests showing the input and output for each functionality and save them to the **screenshots** folder.
+1. Use Makefile to build, run, test the program manuall. Fix any issues if found.
+2. Create screenshots of your tests showing all the results and save them to the **screenshots** folder.
 
-## Unit testing with Doctest
+## Unit testing with assert function
 
-1. If not done before, create **doctest** folder in the **labs** root folder and copy the `doctest.h` file into it from [https://github.com/doctest/doctest/tree/master/doctest ](https://github.com/doctest/doctest/tree/master/doctest)
-2. Set the doctest rule in the Makefile and run the tests. Fix any issues if found.
+1. Set the asserttest target in the Makefile and run the tests. Fix any issues if found.
 
 ```bash
-make doctest
+make asserttest
 ```
+
+2. Create screenshots of your assert test results and save them to the **screenshots** folder.
 
 ## Submission
 
-1. Create at least 3 screenshots showing your local manual tests and make doctest and save them to the **screenshots** folder. (10 points).
+1. Create at least 2 screenshots showing your local manual tests and make assert test and save them to the **screenshots** folder. (10 points).
 2. Update the `README.md` file (10 points) as shown here: https://github.com/rambasnet/csXXX-rbasnet
 
 ```bash

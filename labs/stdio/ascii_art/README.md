@@ -1,8 +1,17 @@
 # CS1 Lab - Standard Input and Output - 1
 
-Possible Points: 100
+## Possible Points: 100
 
-- Write a C++ program to solve the Kattis problemid echoechoecho: [https://open.kattis.com/problems/echoechoecho](https://open.kattis.com/problems/echoechoecho). Note that the last part of the URL, e.g. `echoechoecho` is the problem id. Read the problem statement carefully to design a correct solution.
+- write a C++ program that produces the following output on console:
+
+```text
+    |\_/|       *******************************     (\_/)
+    / @ @ \     *      ASCII Art              *    (='.'=)
+   ( > 0 < )    *      Author: <Your Name>    *  ( " )_( " )
+     >>x<<      *      CS Foundation Course   *
+     / O \       *******************************
+```
+
 - Always write algorithm steps as comments before coding.
 - Always write code that follows best programming practices.
 
@@ -31,18 +40,12 @@ ascii_art/
 
 ## Whole program test with Kattis-cli
 
-1. Test the whole program using Kattis-cli. While testing, provide input using the same format as described in the Input section and shown in input samples.
-2. Add three new input and corresponding output files like the sample files inside data folder (10 points)
-3. Test locally and submit to Kattis once all the tests pass
-
-```bash
-kattis test
-kattis submit
-```
+1. Build, run and manually test the whole program using the Makefile provided
+2. Create screenshots of the output console showing the correct output as shown above.
 
 ## Submission
 
-1. Create at least 3 screenshots showing your local tests (kattis test and make doctest) and the kattis final **Accept** verdict and save them to the **screenshots** folder. (10 points).
+1. Create at least 1 screenshot showing your local tests and save it to the **screenshots** folder. (10 points).
 2. Update the `README.md` file (10 points) as shown here: https://github.com/rambasnet/csXXX-rbasnet
 
 ```bash

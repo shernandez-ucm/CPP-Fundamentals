@@ -2,7 +2,7 @@
 
 Possible Points: 100
 
-Write a C++ program to implement a menu-driven program that performs various operations such as finding max, min, sum, average, etc. on two numbers based on user choice. Use functions to modularize your code. Read the problem statement carefully to design a correct solution.
+Write a C++ program to implement a menu-driven program that performs various operations such as finding max, min, sum, average, etc. on two numbers based on user choice. Use functions to modularize your code.
 
 ## Type and fix the code
 
@@ -47,7 +47,7 @@ make doctest
 
 ## Submission
 
-1. Create at least 3 screenshots showing your local manual tests and make doctest and save them to the **screenshots** folder. (10 points).
+1. Create at least 2 screenshots showing your local manual tests and make doctest and save them to the **screenshots** folder. (10 points).
 2. Update the `README.md` file (10 points) as shown here: https://github.com/rambasnet/csXXX-rbasnet
 
 ```bash

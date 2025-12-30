@@ -17,7 +17,7 @@ CPPFILES = src/main.cpp src/my_math.cpp
 # first compile each file to object file
 # then make a single binary program
 
-all: build doctest clean
+all: build run clean
 
 build:
 	$(CXX) $(CXXFLAGS) $(CPPFILES)
@@ -26,7 +26,7 @@ build:
 run: build
 	./$(PROGRAM)
 
-doctest:
+asserttest:
 	$(CXX) tests/test_my_math.cpp src/my_math.cpp -o test_my_math.exe
 	./test_my_math.exe
 	@echo "All tests executed successfully!"

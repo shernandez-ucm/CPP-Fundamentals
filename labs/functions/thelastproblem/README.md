@@ -1,8 +1,8 @@
-# CS1 Lab - Functions and Unittest
+# CS1 Lab - Functions and Basic Unittest Lab - 2
 
 Possible Points: 100
 
-Write a C++ program to solve the Kattis problemid mclimbroad: [https://open.kattis.com/problems/mclimbroad](https://open.kattis.com/problems/mclimbroad). Note that the last part of the URL, e.g. `mclimbroad` is the problem id. Read the problem statement carefully to design a correct solution.
+Write a C++ program to solve the Kattis problemid thelastproblem: [https://open.kattis.com/problems/thelastproblem](https://open.kattis.com/problems/thelastproblem). Note that the last part of the URL, e.g. `thelastproblem` is the problem id. Read the problem statement carefully to design a correct solution.
 
 ## Kattis Setup
 
@@ -33,11 +33,11 @@ kattis test
 mclimbroad/
 ├── data/
 ├── src/
-│   ├── mclimbroad.h
-│   └── mclimbroad.cpp
-│   └── main.cpp
+│   ├── helper.h
+│   └── thelastproblem.cpp
+│   └── helper.cpp
 ├── tests/
-│   └── test_mclimbroad.cpp
+│   └── test_helper.cpp
 ├── Makefile
 └── README.md
 └── screenshots/
@@ -64,18 +64,17 @@ kattis test
 kattis submit
 ```
 
-## Unit testing with Doctest
+## Unit testing with basic assert function
 
-1. Create **doctest** folder in the **labs** root folder and copy the `doctest.h` file into it from [https://github.com/doctest/doctest/tree/master/doctest ](https://github.com/doctest/doctest/tree/master/doctest)
-2. Set the doctest rule in the Makefile and run the tests. Fix any issues if found.
+1. Set the unittest target in the Makefile and run the tests. Fix any issues if found.
 
 ```bash
-make doctest
+make unittest
 ```
 
 ## Submission
 
-1. Create at least 3 screenshots showing your local tests (kattis test and make doctest) and the kattis final **Accept** verdict and save them to the **screenshots** folder. (10 points).
+1. Create at least 3 screenshots showing your local tests (kattis test and make unittest) and the kattis final **Accept** verdict and save them to the **screenshots** folder. (10 points).
 2. Update the `README.md` file (10 points) as shown here: https://github.com/rambasnet/csXXX-rbasnet
 
 ```bash
